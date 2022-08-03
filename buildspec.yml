@@ -9,7 +9,7 @@ phases:
       - npm test
 artifacts:
   files:
-    - ./build_output.zip/**/*
+    - '/**/*'
     - appspec.yml
     - deploy_scripts/install.sh
     - deploy_scripts/stop.sh
