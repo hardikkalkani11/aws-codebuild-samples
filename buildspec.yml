@@ -9,9 +9,5 @@ phases:
       - npm test
 artifacts:
   files:
-    - '/**/*'
+    -'**/*'
     - appspec.yml
-    - deploy_scripts/install.sh
-    - deploy_scripts/stop.sh
-    - deploy_scripts/start.sh
-    - deploy_scripts/validate.sh
