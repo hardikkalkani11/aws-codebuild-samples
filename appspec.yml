@@ -13,13 +13,13 @@ permissions:
 hooks:
   BeforeInstall:
     - location: deploy_scripts/install.sh
-      runas: root
+      runas: ubuntu
   ApplicationStop:
     - location: deploy_scripts/stop.sh
-      runas: root
+      runas: ubuntu
   ApplicationStart:
     - location: deploy_scripts/start.sh
-      runas: root
+      runas: ubuntu
   ValidateService:
     - location: deploy_scripts/validate.sh
-      runas: root
+      runas: ubuntu
