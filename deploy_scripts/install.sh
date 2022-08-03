@@ -1,6 +1,6 @@
 #!/bin/bash
-source /home/ec2-user/.bash_profile
-cd /home/ec2-user
+source /home/ubuntu/.bash_profile
+cd /home/ubuntu
 node --version
 if [ $? -ne 0 ]
 then
