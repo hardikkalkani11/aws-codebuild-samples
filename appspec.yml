@@ -3,23 +3,23 @@ os: linux
 
 files:
   - source: /
-    destination: /home/ec2-user/calculator
+    destination: /home/ubuntu/calculator
 
 permissions:
   - object: /
     pattern: "**"
-    owner: ec2-user
-    group: ec2-user
+    owner: root
+    group: root
 hooks:
   BeforeInstall:
     - location: deploy_scripts/install.sh
-      runas: ec2-user
+      runas: root
   ApplicationStop:
     - location: deploy_scripts/stop.sh
-      runas: ec2-user
+      runas: root
   ApplicationStart:
     - location: deploy_scripts/start.sh
-      runas: ec2-user
+      runas: root
   ValidateService:
     - location: deploy_scripts/validate.sh
-      runas: ec2-user
+      runas: root
