@@ -3,7 +3,7 @@ os: linux
 
 files:
   - source: /
-    destination: /home/ubuntu/calculator
+    destination: /var/www/html/
 
 permissions:
   - object: /
